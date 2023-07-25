@@ -1,21 +1,28 @@
 package com.example.lab2testapi.model;
 
 public class Product {
+    public String id;
     public  String name;
     public float price;
     public  String description;
     public  String CreatedAt;
     public  String UpdatedAt;
 
-    public Product(String name, float price, String description, String createdAt, String updatedAt) {
+    public Product(String name, float price, String description) {
         this.name = name;
         this.price = price;
         this.description = description;
-        CreatedAt = createdAt;
-        UpdatedAt = updatedAt;
     }
 
     public Product() {
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {

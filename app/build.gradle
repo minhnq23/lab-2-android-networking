@@ -5,7 +5,9 @@ plugins {
 android {
     namespace 'com.example.lab2testapi'
     compileSdk 33
-
+    buildFeatures {
+        viewBinding true
+    }
     defaultConfig {
         applicationId "com.example.lab2testapi"
         minSdk 24

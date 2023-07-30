@@ -1,7 +1,7 @@
 package com.example.lab2testapi.model;
 
 public class Product {
-    public String id;
+    public String _id;
     public  String name;
     public float price;
     public  String description;
@@ -14,15 +14,24 @@ public class Product {
         this.description = description;
     }
 
+    public Product(String _id, String name, float price, String description, String createdAt, String updatedAt) {
+        this._id = _id;
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        CreatedAt = createdAt;
+        UpdatedAt = updatedAt;
+    }
+
     public Product() {
     }
 
-    public String getId() {
-        return id;
+    public String get_id() {
+        return _id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void set_id(String _id) {
+        this._id = _id;
     }
 
     public String getName() {
